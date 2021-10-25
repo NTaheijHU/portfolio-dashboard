@@ -5,8 +5,29 @@ import "tailwindcss/utilities.css";
 import "tailwindcss/screens.css";
 import "../styles/app.css";
 import Head from "next/head";
+import { useEffect } from "react";
 
 function Dashboard({ Component, pageProps }) {
+  useEffect(() => {
+    if(!('theme' in localStorage)) {
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+        switchDarkClasses();
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      }
+    } else {
+      if(localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        switchDarkClasses();
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+  });
+
   return (
     <>
         <Head>
@@ -22,6 +43,27 @@ function Dashboard({ Component, pageProps }) {
         </div>
     </>
   );
+}
+
+function goDark() {
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('dark');
+    localStorage.theme = 'dark';
+  } else {
+    document.documentElement.classList.remove('dark');
+    localStorage.theme = 'light';
+  }
+
+  switchDarkClasses();
+}
+
+function switchDarkClasses() {
+  var root = document.querySelector(':root');
+  var rootLight = getComputedStyle(root).getPropertyValue('--light');
+  var rootDark = getComputedStyle(root).getPropertyValue('--dark');
+
+  root.style.setProperty('--light', rootDark);
+  root.style.setProperty('--dark', rootLight);
 }
 
 export default Dashboard;
