@@ -21,6 +21,7 @@ function LoginScreen() {
       </form>
       <footer>
         <a class="text-indigo-700 hover:text-pink-700 text-sm float-left" href="#">Forgot Password?</a>
+        <a class="text-indigo-700 hover:text-pink-700 text-sm float-right" href="/">Ga naar home</a>
       </footer> 
     </div>
    );
