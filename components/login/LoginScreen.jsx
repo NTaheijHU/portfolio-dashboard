@@ -16,12 +16,12 @@ function LoginScreen() {
           <input class="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-100" type="password" name="password" autoComplete="off" />
         </div>
         <div>          
-          <input class="w-full bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded" type="submit" autoComplete="off" />
+          <input class="w-full bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-2 px-4 mb-6 rounded" type="submit" autoComplete="off" />
         </div>
       </form>
       <footer>
-        <a class="text-indigo-700 hover:text-pink-700 text-sm float-left" href="#">Forgot Password?</a>
-        <a class="text-indigo-700 hover:text-pink-700 text-sm float-right" href="/">Ga naar home</a>
+        <a class="text-indigo-700 hover:text-indigo-900 text-sm float-left" href="#">Forgot Password?</a>
+        <a class="text-indigo-700 hover:text-indigo-900 text-sm float-right" href="/">Ga naar home</a>
       </footer> 
     </div>
    );
