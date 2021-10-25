@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* General */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #e9ebee;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: relative;
+  z-index: 40;
+}
+
+.invisible {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+#selectable {
+  cursor: pointer;
+}
