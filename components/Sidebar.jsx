@@ -149,7 +149,7 @@ function Sidebar(props) {
                       </p>
                       { props.selected === 'Website' ?
                         <>
-                          <a className="hover:text-gray-800 text-gray-900 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 dark:text-gray-400hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start rounded-sm" href="#">
+                          <a className="hover:text-gray-800 text-gray-900 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 dark:text-gray-400hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start rounded-sm" href="/settings/website">
                             <span className="text-left">
                               <svg width="20" height="20" fill="currentColor" className="m-auto" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"><path fill="#5e72e4" d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"></path></svg>
                             </span>
@@ -159,7 +159,7 @@ function Sidebar(props) {
                           </a>
                         </> :
                         <>
-                          <a className="hover:text-gray-800 font-thin text-gray-500 dark:text-gray-400 hover:bg-gray-100 flex items-center p-2 my-4 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start" href="#">
+                          <a className="hover:text-gray-800 font-thin text-gray-500 dark:text-gray-400 hover:bg-gray-100 flex items-center p-2 my-4 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start" href="/settings/website">
                             <span className="text-left">
                               <svg width="20" height="20" fill="currentColor" className="m-auto" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"><path fill="#5e72e4" d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"></path></svg>
                             </span>
@@ -171,7 +171,7 @@ function Sidebar(props) {
                       }
                       { props.selected === 'Profile' ?
                         <>
-                          <a className="hover:text-gray-800 text-gray-900 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 dark:text-gray-400hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start rounded-sm" href="#">
+                          <a className="hover:text-gray-800 text-gray-900 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 dark:text-gray-400hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start rounded-sm" href="/settings/profile">
                             <span className="text-left">
                               <svg width="20" height="20" fill="currentColor" className="m-auto" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"><path fill="#5e72e4" d="M960 0l960 384v128h-128q0 26-20.5 45t-48.5 19h-1526q-28 0-48.5-19t-20.5-45h-128v-128zm-704 640h256v768h128v-768h256v768h128v-768h256v768h128v-768h256v768h59q28 0 48.5 19t20.5 45v64h-1664v-64q0-26 20.5-45t48.5-19h59v-768zm1595 960q28 0 48.5 19t20.5 45v128h-1920v-128q0-26 20.5-45t48.5-19h1782z"></path></svg>
                             </span>
@@ -181,7 +181,7 @@ function Sidebar(props) {
                           </a>
                         </> :
                         <>
-                          <a className="hover:text-gray-800 font-thin text-gray-500 dark:text-gray-400 hover:bg-gray-100 flex items-center p-2 my-4 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start" href="#">
+                          <a className="hover:text-gray-800 font-thin text-gray-500 dark:text-gray-400 hover:bg-gray-100 flex items-center p-2 my-4 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start" href="/settings/profile">
                             <span className="text-left">
                               <svg width="20" height="20" fill="currentColor" className="m-auto" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg"><path fill="#5e72e4" d="M960 0l960 384v128h-128q0 26-20.5 45t-48.5 19h-1526q-28 0-48.5-19t-20.5-45h-128v-128zm-704 640h256v768h128v-768h256v768h128v-768h256v768h128v-768h256v768h59q28 0 48.5 19t20.5 45v64h-1664v-64q0-26 20.5-45t48.5-19h59v-768zm1595 960q28 0 48.5 19t20.5 45v128h-1920v-128q0-26 20.5-45t48.5-19h1782z"></path></svg>
                             </span>
