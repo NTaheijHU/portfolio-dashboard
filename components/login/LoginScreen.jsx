@@ -8,11 +8,11 @@ function LoginScreen() {
       </header>
       <form>
         <div>
-          <label class="block mb-2 text-indigo-500" forHtml="username">Username</label>
+          <label class="block mb-2 text-indigo-500" forhtml="username">Username</label>
           <input class="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-100" type="text" name="username" autoComplete="off" />
         </div>
         <div>
-          <label class="block mb-2 text-indigo-500" forHtml="password">Password</label>
+          <label class="block mb-2 text-indigo-500" forhtml="password">Password</label>
           <input class="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-100" type="password" name="password" autoComplete="off" />
         </div>
         <div>          

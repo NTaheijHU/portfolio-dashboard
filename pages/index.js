@@ -9,9 +9,11 @@ export default function Home() {
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-      <Sidebar />
+      <Sidebar
+        selected="Home"
+      />
       <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-5">
-        <div className="bg-gray-200 dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-xl mt-8 mx-8 md:mx-40 flex items-center justify-center h-1/6">
+        <div className="bg-gray-200 dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-xl mt-8 mx-8 md:mx-20 flex items-center justify-center h-1/6">
           <p className="text-3xl font-semibold">Welkom terug, {"Noah Taheij"}.</p>
         </div>
         <div id="cards" className="md:mx-4 mt-10 mb-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
