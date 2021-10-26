@@ -36,7 +36,6 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps() {
-  console.log("req");
   const data = await fetch(process.env.API_ENDPOINT + '/projects');
   const projects = await data.json();
   return { props: { projects } }
