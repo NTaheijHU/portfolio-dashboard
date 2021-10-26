@@ -2,7 +2,7 @@ function Sidebar(props) {
   return ( 
     <div className="bg-white dark:bg-gray-900">
       <div className="flex">
-          <div className="h-screen">
+          <div className="min-h-screen">
               <nav className="mt-6 px-4">
                   { props.selected === 'Home' ? 
                     <>
