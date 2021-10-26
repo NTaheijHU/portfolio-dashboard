@@ -1,6 +1,6 @@
 function Sidebar() {
   return ( 
-    <div class="bg-white dark:bg-gray-900 mr-2">
+    <div class="bg-white dark:bg-gray-900">
       <div class="flex">
           <div class="h-screen">
               <nav class="mt-6 px-4">
