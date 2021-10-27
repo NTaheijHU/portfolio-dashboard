@@ -6,6 +6,7 @@ import "tailwindcss/screens.css";
 import "../styles/app.css";
 import Head from "next/head";
 import { useEffect } from "react";
+import { Provider } from "next-auth/client"
 
 function Dashboard({ Component, pageProps }) {
   useEffect(() => {
@@ -29,7 +30,7 @@ function Dashboard({ Component, pageProps }) {
   });
 
   return (
-    <>
+    <Provider session={pageProps.session}>
         <Head>
           <title>Noah Taheij</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -41,7 +42,7 @@ function Dashboard({ Component, pageProps }) {
         <div className="bg-gray-200 bg-opacity-60 dark:bg-gray-800 dark:bg-opacity-100 text-gray-800 dark:text-gray-200 min-h-screen" id="App">
           <Component {...pageProps} />
         </div>
-    </>
+    </Provider>
   );
 }
 
