@@ -1,21 +1,20 @@
 import { useRouter } from "next/dist/client/router";
-import { useSession } from "next-auth/client"
+import { useSession } from "next-auth/react";
 import { useEffect } from "react";
 
 function AuthPage({children}) {
   const router = useRouter();
-  const [session, loading] = useSession();
+  const { data: session, status } = useSession();
 
-  if (typeof window !== 'undefined' && loading) return null;
+  if (typeof window !== 'undefined' && status === 'loading') return null;
 
   useEffect(() => {
-    console.log(session, loading);
     if (!session) {
       return router.push("/api/auth/signin");
     }
   }, [session]);
 
-  return <>{(!loading && session) && children}</>;
+  return <>{(!(status === 'loading') && session) && children}</>;
 }
 
 export default AuthPage;

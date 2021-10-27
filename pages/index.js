@@ -1,17 +1,13 @@
 import Sidebar from "../components/Sidebar";
 import HomeCard from "../components/cards/HomeCard";
 import AuthPage from "../components/AuthPage";
-import { useSession } from "next-auth/client";
-import { useEffect } from "react";
+import { useSession } from "next-auth/react";
 
 export default function Home() {
 
-  const [session, loading] = useSession();
+  const { data: session, status } = useSession();
 
-  if (typeof window !== 'undefined' && loading) return null;
-
-  useEffect(() => {
-  }, [session]);
+  if (typeof window !== 'undefined' && status === 'loading') return null;
 
   const items = [
     "Nucleus", "Dashboard", "Reviews", "Trustpilot",
