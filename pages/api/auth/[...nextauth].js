@@ -12,6 +12,6 @@ export default NextAuth({
   theme: {
     colorScheme: "dark",
     brandColor: "#5e72e4",
-    logo: "https://cdn.lokalized.nl/lokalized-images/icon_white"
+    logo: "/logo.png"
   },
 })
