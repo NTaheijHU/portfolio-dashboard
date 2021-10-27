@@ -1,5 +1,6 @@
 import Sidebar from "../../components/Sidebar";
 import TitleCard from "../../components/cards/TitleCard";
+import AuthPage from "../../components/AuthPage";
 
 export default function Home(props) {
   return (
