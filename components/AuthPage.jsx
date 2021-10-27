@@ -15,7 +15,7 @@ function AuthPage({children}) {
     }
   }, [session]);
 
-  return <>{!loading && children}</>;
+  return <>{(!loading && session) && children}</>;
 }
 
 export default AuthPage;
