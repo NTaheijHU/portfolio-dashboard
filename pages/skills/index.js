@@ -24,7 +24,7 @@ export default function Home(props) {
               {
                 props.skills.map(skill => {
                   return (
-                    <div className="overflow-hidden rounded-lg shadow-lg bg-gray-50 bg-opacity-90 dark:bg-gray-700 dark:bg-opacity-100 dark:text-gray-100 mb-4 mr-4">
+                    <div className="overflow-hidden rounded-lg shadow-lg bg-gray-50 bg-opacity-90 dark:bg-gray-700 dark:bg-opacity-100 dark:text-gray-100 mb-4 mr-4" key={skill.name}>
                       <div className="pl-4 pt-4">
                         <h3 className="uppercase font-medium text-4xl mb-3">{skill.name}</h3>
                       </div>

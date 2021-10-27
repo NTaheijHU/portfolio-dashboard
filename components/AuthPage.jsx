@@ -6,13 +6,13 @@ function AuthPage({children}) {
   const router = useRouter();
   const { data: session, status } = useSession();
 
-  if (typeof window !== 'undefined' && status === 'loading') return null;
-
   useEffect(() => {
-    if (!session) {
-      return router.push("/api/auth/signin");
+    if (session === null) {
+        return router.push("/api/auth/signin");
     }
   }, [session]);
+
+  if (typeof window !== 'undefined' && status === 'loading') return null;
 
   return <>{(!(status === 'loading') && session) && children}</>;
 }

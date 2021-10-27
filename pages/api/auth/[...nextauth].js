@@ -14,12 +14,4 @@ export default NextAuth({
     brandColor: "#5e72e4",
     logo: "https://cdn.lokalized.nl/lokalized-images/icon_white"
   },
-  session: {
-    jwt: true,
-    maxAge: 1 * 60 * 60, // 1 hour
-  },
-  jwt: {
-    secret : process.env.JWT_SECRET,
-    expiresIn: "1h",
-  },
 })
